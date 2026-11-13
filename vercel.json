@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api" },
+    { "source": "/((?!assets/|.*\\..*).*)", "destination": "/index.html" }
+  ],
+  "functions": {
+    "api/index.js": { "includeFiles": "server/products.json" }
+  }
+}
